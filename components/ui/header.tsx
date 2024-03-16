@@ -3,7 +3,7 @@ import Logo from './logo'
 import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu'
 
-export default function Header({ mode = 'dark' }: {
+export default function Header({ mode = 'light' }: {
   mode?: string
 }) {
   return (

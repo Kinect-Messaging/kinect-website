@@ -25,18 +25,18 @@ export default function PricingTables() {
       <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-4">
 
         {/* Pricing table 1 */}
-        <div className="relative flex flex-col h-full px-6 py-5 bg-white shadow-lg" data-aos="fade-up">
+        <div className="relative flex flex-col h-full px-6 py-5 bg-slate-900 shadow-lg" data-aos="fade-up">
           <div className="mb-4 pb-4 border-b border-slate-200">
-            <div className="text-lg font-semibold text-slate-800 mb-1">Essential</div>
+            <div className="text-lg font-semibold text-slate-200 mb-1">Essential</div>
             <div className="inline-flex items-baseline mb-3">
-              <span className="h3 font-medium text-slate-500">$</span>
-              <span className="h2 leading-7 font-playfair-display text-slate-800">{annual ? '49' : '55'}</span>
-              <span className="font-medium text-slate-400">/mo</span>
+              <span className="h3 font-medium text-slate-200">$</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-200">{annual ? '49' : '55'}</span>
+              <span className="font-medium text-slate-200">/mo</span>
             </div>
-            <div className="text-slate-500">Better insights for growing businesses that want more customers.</div>
+            <div className="text-slate-200">Better insights for growing businesses that want more customers.</div>
           </div>
-          <div className="font-medium mb-3">Features include:</div>
-          <ul className="text-slate-500 space-y-3 grow mb-6">
+          <div className="font-medium mb-3 text-slate-200">Features include:</div>
+          <ul className="text-slate-200 space-y-3 grow mb-6">
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
@@ -62,7 +62,7 @@ export default function PricingTables() {
               <span>Officia deserunt mollit anim</span>
             </li>
           </ul>
-          <div className="p-3 rounded bg-slate-50">
+          <div>
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#0">
               Start free trial <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
             </a>
