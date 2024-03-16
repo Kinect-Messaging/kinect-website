@@ -15,10 +15,20 @@ export default function HeroHome() {
           {/* Hero content */}
           <div className="max-w-xl mx-auto md:max-w-none md:flex md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-16 md:space-y-0">
 
+            {/* Hero image */}
+            <ModalVideo01
+              thumb={VideoThumb}
+              thumbWidth={540}
+              thumbHeight={405}
+              thumbAlt="Modal video thumbnail"
+              video="/videos/video.mp4"
+              videoWidth={1920}
+              videoHeight={1080} />
+
             {/* Content */}
             <div className="text-center md:text-left md:min-w-[30rem]" data-aos="fade-right">
-              <h1 className="h1 font-playfair-display text-slate-100 mb-4">Create stunning web experiences</h1>
-              <p className="text-xl text-slate-400 mb-8">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+              <h1 className="h1 font-playfair-display text-slate-100 mb-4">Helping unify customer experience, messaging and behavior</h1>
+              {/* <p className="text-xl text-slate-400 mb-8">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p> */}
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <div>
                   <Link className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group" href="/request-demo">
@@ -32,14 +42,14 @@ export default function HeroHome() {
             </div>
 
             {/* Hero image */}
-            <ModalVideo01
+            {/* <ModalVideo01
               thumb={VideoThumb}
               thumbWidth={540}
               thumbHeight={405}
               thumbAlt="Modal video thumbnail"
               video="/videos/video.mp4"
               videoWidth={1920}
-              videoHeight={1080} />            
+              videoHeight={1080} /> */}
 
           </div>
 
