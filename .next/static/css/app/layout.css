@@ -2209,6 +2209,12 @@ input[type=range]::-moz-focus-outer {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-11 {
+  margin-top: 2.75rem;
+}
 .box-content {
   box-sizing: content-box;
 }
@@ -2770,6 +2776,9 @@ input[type=range]::-moz-focus-outer {
 }
 .to-blue-600 {
   --tw-gradient-to: #2174EA var(--tw-gradient-to-position);
+}
+.bg-center {
+  background-position: center;
 }
 .fill-blue-100 {
   fill: #dbeafe;
@@ -3820,6 +3829,10 @@ input[type=range]::-moz-focus-outer {
 
   .md\:pt-40 {
     padding-top: 10rem;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .md\:text-left {

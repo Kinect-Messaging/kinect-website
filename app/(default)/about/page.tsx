@@ -15,9 +15,9 @@ export default function About() {
   return (
     <>
       <Hero />
-      <Stats />
+      {/* <Stats /> */}
       <Content />
-      <Team />
+      {/* <Team /> */}
       <TeamMembers />
       <Clients />
       <Cta />

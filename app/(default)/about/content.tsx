@@ -6,9 +6,10 @@ export default function AboutContent() {
 
           <div className="max-w-3xl mx-auto">
             <div className="text-lg text-slate-500">
-              <h2 className="h3 font-playfair-display text-slate-800 mb-4">Our Mission</h2>
+              {/* <h2 className="h3 font-playfair-display text-slate-800 mb-4">Our Mission</h2> */}
+              <h2 className="h3 font-playfair-display text-slate-800 mb-4 mt-12">Our Mission</h2>
               <p className="mb-8">
-                To enable organizations to successfully connect with their Customers through technology, data, and transparency end to end.
+                To enable organizations to successfully connect with their customers through technology, data, and transparency end to end.
               </p>
               {/* <p className="mb-8">
                 Temper auctor neque vitae tempus quam pellentesque nec. Amet dictum sit amet justo donec enim diam. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Odio pellentesque diam volutpat commodo sed. Elit sed vulputate mi sit amet mauris commodo quis imperdiet.

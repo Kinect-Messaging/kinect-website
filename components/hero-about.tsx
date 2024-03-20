@@ -22,9 +22,9 @@ export default function HeroAbout() {
           </div>
 
           {/* Hero image */}
-          <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="100">
+          {/* <div className="flex justify-center items-center" data-aos="fade-up" data-aos-delay="100">
             <Image className="mx-auto" src={IntroImage} width={1024} height={576} priority alt="About intro" />
-          </div>
+          </div> */}
 
         </div>
       </div>
