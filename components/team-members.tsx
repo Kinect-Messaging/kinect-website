@@ -30,7 +30,7 @@ export default function TeamMembers() {
                 <Image className="rounded-full" src={TeamMemberImage01} width={120} height={120} alt="Member 01" />
               </div>
               <h4 className="h4 font-playfair-display text-slate-800 mb-2">Al Garay</h4>
-              <div className="font-medium text-blue-600">Co-founder, Operations</div>
+              <div className="font-medium text-blue-600">Co-Founder, Operations</div>
             </div>
 
             {/* 2nd member */}

@@ -19,8 +19,8 @@ export default function About() {
       <Content />
       {/* <Team /> */}
       <TeamMembers />
-      <Clients />
-      <Cta />
+      {/* <Clients /> */}
+      {/* <Cta /> */}
     </>
   )
 }
