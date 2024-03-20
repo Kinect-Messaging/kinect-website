@@ -5,10 +5,19 @@ import { useState } from 'react'
 export default function PricingTables() {
 
   const [annual, setAnnual] = useState<boolean>(true)
-  
+
   return (
     <div>
 
+      {/* Building the Slider */}
+
+      <header>
+        <h1 className="text-xl font-bold text-slate-900">How many emails do you send (per month)?</h1>
+      </header>
+
+
+
+      {/* Previous Stuff */}
       {/* Pricing toggle */}
       <div className="flex justify-center items-center space-x-4 sm:space-x-7 mb-16">
         <div className="text-sm text-slate-500 font-medium text-right min-w-[8rem]">Pay Monthly</div>

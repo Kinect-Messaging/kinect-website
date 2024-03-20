@@ -1951,6 +1951,9 @@ input[type=range]::-moz-focus-outer {
 .pointer-events-none {
   pointer-events: none;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -2281,6 +2284,12 @@ input[type=range]::-moz-focus-outer {
 .h-screen {
   height: 100vh;
 }
+.h-10 {
+  height: 2.5rem;
+}
+.h-9 {
+  height: 2.25rem;
+}
 .max-h-full {
   max-height: 100%;
 }
@@ -2325,6 +2334,12 @@ input[type=range]::-moz-focus-outer {
 }
 .w-full {
   width: 100%;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-9 {
+  width: 2.25rem;
 }
 .min-w-\[10rem\] {
   min-width: 10rem;

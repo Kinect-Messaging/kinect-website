@@ -12,7 +12,8 @@ export default function Team() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-playfair-display text-slate-800">We are fully distributed, which means you can join us whenever you want.</h2>
+            <h2 className="h2 font-playfair-display text-slate-800">“Realize that everything connects to everything else”</h2>
+            <h2 className="h2 font-playfair-display text-slate-800"> ~Leonardo DaVinci</h2>
           </div>
 
         </div>
