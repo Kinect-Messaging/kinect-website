@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import TeamMemberImage01 from '@/public/images/al_image.jpg'
-import TeamMemberImage02 from '@/public/images/team-member-02.jpg'
+import TeamMemberImage02 from '@/public/images/raj_image.jpeg'
 import TeamMemberImage03 from '@/public/images/ty_image.jpg'
 import TeamMemberImage04 from '@/public/images/team-member-04.jpg'
 import TeamMemberImage05 from '@/public/images/team-member-05.jpg'
