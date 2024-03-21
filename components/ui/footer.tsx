@@ -24,7 +24,7 @@ export default function Footer() {
                 </svg>
               </Link>
             </div>
-            <div className="text-lg font-bold text-slate-800">The smarter way to start your next idea.</div>
+            <div className="text-lg font-bold text-slate-800">Unify. Amplify. Captivate.</div>
           </div>
 
           {/* 2nd block */}
@@ -37,9 +37,9 @@ export default function Footer() {
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Pricing</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Service Areas</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -47,12 +47,12 @@ export default function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-sm text-slate-800 font-semibold mb-2">Resources</h6>
             <ul className="text-sm font-medium space-y-2">
-              <li>
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Customer Stories</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Knowledge Base</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Contact Us</a>
               </li>
@@ -64,17 +64,17 @@ export default function Footer() {
             <h6 className="text-sm text-slate-800 font-semibold mb-2">Products</h6>
             <ul className="text-sm font-medium space-y-2">
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Corporate Partners</a>
+                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Features</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Secure Identity</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Legal Help</a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">First Capital</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -85,9 +85,9 @@ export default function Footer() {
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">About Us</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Careers</a>
-              </li>
+              </li> */}
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Terms of Use</a>
               </li>
