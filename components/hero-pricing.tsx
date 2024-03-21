@@ -1,4 +1,5 @@
 import PricingTables from './pricing-tables';
+import PricingSliderTables from './pricing-slider-tables';
 
 export default function HeroPricing() {  
   return (
@@ -16,6 +17,7 @@ export default function HeroPricing() {
           </div>
 
           <PricingTables />
+          <PricingSliderTables />
 
         </div>
       </div>

@@ -35,9 +35,11 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Advanced Features</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Technical Strategy & Advising</a>
               </h3>
-              <p className="text-lg text-slate-500">Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing layouts.</p>
+              <p className="text-lg text-slate-500">
+                From Technology architecture, design, and development, our deep expertise in Agile and Waterfall methodologies has you covered
+              </p>
             </article>
 
             {/* 2nd article */}
@@ -54,9 +56,11 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Advanced Features</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Marketing</a>
               </h3>
-              <p className="text-lg text-slate-500">Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing layouts.</p>
+              <p className="text-lg text-slate-500">
+                Creating data-driven strategies that are centered around your Customer with a data-driven approach.
+              </p>
             </article>
 
             {/* 3rd article */}
@@ -73,9 +77,11 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Advanced Features</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Supplemental</a>
               </h3>
-              <p className="text-lg text-slate-500">Lorem ipsum is placeholder text used in the graphic, print, and publishing for previewing layouts.</p>
+              <p className="text-lg text-slate-500">
+                We provide subject matter experts that are billable and can develop/co-develop solutions with you.
+              </p>
             </article>
 
           </div>

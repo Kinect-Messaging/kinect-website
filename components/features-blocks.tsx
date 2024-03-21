@@ -44,7 +44,9 @@ export default function FeaturesBlocks() {
                 <use fillOpacity=".64" fill="#E2EEFF" xlinkHref="#fb1-e" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Design & Development</h3>
-              <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p className="text-lg text-slate-500">
+                Personalize the Customer Experience and meaningful Messaging to inspire and engage your Customers.
+              </p>
             </div>
 
             {/* 2nd item */}
@@ -81,7 +83,9 @@ export default function FeaturesBlocks() {
                 <path d="M32.5 36a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" fillOpacity=".64" fill="#5091EE" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Deliver</h3>
-              <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p className="text-lg text-slate-500">
+                Precise, reliable, and secure Customer messaging delivery.
+              </p>
             </div>
 
             {/* 3rd item */}
@@ -113,11 +117,13 @@ export default function FeaturesBlocks() {
                 <use fill="url(#fb3-e)" xlinkHref="#fb3-d" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Data & Insights</h3>
-              <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p className="text-lg text-slate-500">
+                Track delivery rates, open rates, and engagement to optimize your messaging strategy.
+              </p>
             </div>
 
             {/* 4th item */}
-            <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="300">
+            {/* <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="300">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-29.2%" y="-11.5%" width="158.3%" height="132.2%" filterUnits="objectBoundingBox" id="fb4-a">
@@ -146,10 +152,10 @@ export default function FeaturesBlocks() {
               </svg>
               <h3 className="h4 font-playfair-display mb-2">TBD</h3>
               <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            </div> */}
 
             {/* 5th item */}
-            <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="400">
+            {/* <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="400">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-29.2%" y="-22.7%" width="158.3%" height="163.6%" filterUnits="objectBoundingBox" id="fb5-a">
@@ -178,10 +184,10 @@ export default function FeaturesBlocks() {
               </svg>
               <h3 className="h4 font-playfair-display mb-2">TBD</h3>
               <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            </div> */}
 
             {/* 6th item */}
-            <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="500">
+            {/* <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="500">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-14.6%" y="-11.4%" width="129.2%" height="132%" filterUnits="objectBoundingBox" id="fb6-a">
@@ -210,7 +216,7 @@ export default function FeaturesBlocks() {
               </svg>
               <h3 className="h4 font-playfair-display mb-2">TBD</h3>
               <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            </div> */}
 
           </div>
 
