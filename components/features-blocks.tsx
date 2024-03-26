@@ -43,9 +43,9 @@ export default function FeaturesBlocks() {
                 <use fill="#000" filter="url(#fb1-d)" xlinkHref="#fb1-e" />
                 <use fillOpacity=".64" fill="#E2EEFF" xlinkHref="#fb1-e" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">Design & Development</h3>
+              <h3 className="h4 font-playfair-display mb-2">Workflow</h3>
               <p className="text-lg text-slate-500">
-                Personalize the Customer Experience and meaningful Messaging to inspire and engage your Customers.
+                Unlock productivity and streamline your requests with our game-changing Workflow automation feature.
               </p>
             </div>
 
@@ -82,9 +82,9 @@ export default function FeaturesBlocks() {
                 </g>
                 <path d="M32.5 36a3.5 3.5 0 110-7 3.5 3.5 0 010 7z" fillOpacity=".64" fill="#5091EE" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">Deliver</h3>
+              <h3 className="h4 font-playfair-display mb-2">Customer Journeys</h3>
               <p className="text-lg text-slate-500">
-                Precise, reliable, and secure Customer messaging delivery.
+                Create the ultimate Customer experience with our holistic Customer Journey feature.
               </p>
             </div>
 
@@ -116,14 +116,14 @@ export default function FeaturesBlocks() {
                 <use fill="#000" filter="url(#fb3-c)" xlinkHref="#fb3-d" />
                 <use fill="url(#fb3-e)" xlinkHref="#fb3-d" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">Data & Insights</h3>
+              <h3 className="h4 font-playfair-display mb-2">Customer Messaging</h3>
               <p className="text-lg text-slate-500">
-                Track delivery rates, open rates, and engagement to optimize your messaging strategy.
+                Create, connect, and delight Customers with our ready-made templates and AI.
               </p>
             </div>
 
             {/* 4th item */}
-            {/* <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="300">
+            <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="300">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-29.2%" y="-11.5%" width="158.3%" height="132.2%" filterUnits="objectBoundingBox" id="fb4-a">
@@ -150,12 +150,14 @@ export default function FeaturesBlocks() {
                 <use fill="#000" filter="url(#fb4-d)" xlinkHref="#fb4-e" />
                 <use fillOpacity=".64" fill="#E2EEFF" xlinkHref="#fb4-e" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">TBD</h3>
-              <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div> */}
+              <h3 className="h4 font-playfair-display mb-2">Design & Development</h3>
+              <p className="text-lg text-slate-500">
+                Empower your creativity and code mastery with our Design & Development toolkit.
+              </p>
+            </div>
 
             {/* 5th item */}
-            {/* <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="400">
+            <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="400">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-29.2%" y="-22.7%" width="158.3%" height="163.6%" filterUnits="objectBoundingBox" id="fb5-a">
@@ -182,12 +184,14 @@ export default function FeaturesBlocks() {
                 <use fill="#000" filter="url(#fb5-c)" xlinkHref="#fb5-d" />
                 <use fill="url(#fb5-e)" xlinkHref="#fb5-d" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">TBD</h3>
-              <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div> */}
+              <h3 className="h4 font-playfair-display mb-2">Data & Reporting</h3>
+              <p className="text-lg text-slate-500">
+                Unleash actionable insights and drive informed decisions with our robust Data & Reporting.
+              </p>
+            </div>
 
             {/* 6th item */}
-            {/* <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="500">
+            <div className="relative" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]" data-aos-delay="500">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-14.6%" y="-11.4%" width="129.2%" height="132%" filterUnits="objectBoundingBox" id="fb6-a">
@@ -214,9 +218,11 @@ export default function FeaturesBlocks() {
                 <use fill="#000" filter="url(#fb6-d)" xlinkHref="#fb6-e" />
                 <use fillOpacity=".64" fill="#E2EEFF" xlinkHref="#fb6-e" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">TBD</h3>
-              <p className="text-lg text-slate-500">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div> */}
+              <h3 className="h4 font-playfair-display mb-2">Messaging Repository</h3>
+              <p className="text-lg text-slate-500">
+                Centralize, organize, and access all your communication effortlessly with our Messaging Repository.
+              </p>
+            </div>
 
           </div>
 

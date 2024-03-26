@@ -7,7 +7,7 @@ export default function HeroAbout() {
     <section className="relative">
 
       {/* Dark background */}
-      <div className="absolute inset-0 bg-slate-100 pointer-events-none -z-10 mb-48 lg:mb-0 lg:h-[30rem]" aria-hidden="true">
+      <div className="absolute inset-0 bg-slate-900 pointer-events-none -z-10 mb-48 lg:mb-0 lg:h-[30rem]" aria-hidden="true">
         <div className="w-full h-full" data-aos="fade">
           {/* <Image className="opacity-10 w-full h-full object-cover" src={HeroImage} width={1440} height={497} priority alt="Hero" /> */}
         </div>
@@ -18,7 +18,7 @@ export default function HeroAbout() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-16">
-            <h1 className="h1 font-playfair-display text-slate-900">Connecting the customer experience, messaging, and behavior.</h1>
+            <h1 className="h1 font-playfair-display text-slate-100">Connecting the customer experience, messaging, and behavior.</h1>
           </div>
 
           {/* Hero image */}

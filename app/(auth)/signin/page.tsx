@@ -87,12 +87,12 @@ export default function SignIn() {
       <div className="relative hidden md:block md:w-1/2 bg-slate-900" aria-hidden="true">
 
         {/* Bg image */}
-        <div className="absolute inset-0" data-aos="fade">
+        {/* <div className="absolute inset-0" data-aos="fade">
           <Image className="opacity-10 w-full h-full object-cover" src={PageBG} width={760} height={900} priority alt="Background" />
-        </div>
+        </div> */}
 
         {/* Quote */}
-        <div className="min-h-screen h-full flex flex-col justify-center">
+        {/* <div className="min-h-screen h-full flex flex-col justify-center">
           <div className="px-5 sm:px-6">
             <div className="w-full max-w-lg mx-auto">
               <h2 className="h3 md:text-4xl font-playfair-display text-slate-100 mb-4">The Wealth Inc.</h2>
@@ -114,7 +114,7 @@ export default function SignIn() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
       </div>    
     </>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import TeamMemberImage01 from '@/public/images/al_image.jpg'
 import TeamMemberImage02 from '@/public/images/raj_image.jpeg'
 import TeamMemberImage03 from '@/public/images/ty_image.jpg'
-import TeamMemberImage04 from '@/public/images/team-member-04.jpg'
+import TeamMemberImage04 from '@/public/images/pc_image.jpg'
 import TeamMemberImage05 from '@/public/images/team-member-05.jpg'
 import TeamMemberImage06 from '@/public/images/team-member-06.jpg'
 import TeamMemberImage07 from '@/public/images/team-member-07.jpg'
@@ -21,8 +21,7 @@ export default function TeamMembers() {
           </div>
 
           {/* Team members */}
-          {/* <div className="relative max-w-sm mx-auto grid gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-20 items-start sm:max-w-xl lg:max-w-none" data-aos-id-team> */}
-          <div className="grid gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto items-start justify-center" data-aos-id-team>
+          <div className="relative max-w-sm mx-auto grid gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-20 items-start sm:max-w-xl lg:max-w-none" data-aos-id-team>
 
             {/* 1st member */}
             <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]">
@@ -52,13 +51,13 @@ export default function TeamMembers() {
             </div>
 
             {/* 4th member */}
-            {/* <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={300}>
+            <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={300}>
               <div className="inline-flex mb-4">
                 <Image className="rounded-full" src={TeamMemberImage04} width={120} height={120} alt="Member 04" />
               </div>
-              <h4 className="h4 font-playfair-display text-slate-800 mb-2">Cameron Mckay</h4>
-              <div className="font-medium text-blue-600">Senior UX/UI Designer</div>
-            </div> */}
+              <h4 className="h4 font-playfair-display text-slate-800 mb-2">Pragnath Chintalapati</h4>
+              <div className="font-medium text-blue-600">Lead Software Engineer</div>
+            </div>
 
             {/* 5th member */}
             {/* <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={400}>

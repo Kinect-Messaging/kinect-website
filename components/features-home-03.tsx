@@ -15,7 +15,7 @@ export default function FeaturesHome03() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-playfair-display text-slate-100">Simplify operating and manage with transparency</h2>
+            <h2 className="h2 font-playfair-display text-slate-100">Full Service offerings from strategy to execution</h2>
           </div>
 
           {/* Section content */}
@@ -38,7 +38,7 @@ export default function FeaturesHome03() {
                 <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Technical Strategy & Advising</a>
               </h3>
               <p className="text-lg text-slate-500">
-                From Technology architecture, design, and development, our deep expertise in Agile and Waterfall methodologies has you covered
+                Technical architecture, design, and development using Agile and Waterfall methodologies.
               </p>
             </article>
 
@@ -59,7 +59,7 @@ export default function FeaturesHome03() {
                 <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Marketing</a>
               </h3>
               <p className="text-lg text-slate-500">
-                Creating data-driven strategies that are centered around your Customer with a data-driven approach.
+                Marketing strategies and methods centered around your Customer with a data-driven approach.
               </p>
             </article>
 
@@ -80,7 +80,7 @@ export default function FeaturesHome03() {
                 <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Supplemental</a>
               </h3>
               <p className="text-lg text-slate-500">
-                We provide subject matter experts that are billable and can develop/co-develop solutions with you.
+                We provide subject matter experts that work with you that can lead and / or support your initiatives and activities.
               </p>
             </article>
 
