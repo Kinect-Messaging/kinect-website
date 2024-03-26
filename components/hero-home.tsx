@@ -38,9 +38,9 @@ export default function HeroHome() {
                     Request Demo <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                   </Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#0">Explore Product</Link>
-                </div>
+                </div> */}
               </div>
             </div>
 

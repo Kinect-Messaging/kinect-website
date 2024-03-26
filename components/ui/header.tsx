@@ -24,18 +24,20 @@ export default function Header({ mode = 'dark' }: {
               <li>
                 <Link href="/features" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</Link>
               </li>
+              <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Developers</Link>
               {/* 1st level: hover */}
-              <Dropdown title="Developers">
+              {/* <Dropdown title="Developers"> */}
                 {/* 2nd level: hover */}
-                <li>
+                {/* <li>
                   <Link href="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">404</Link>
                 </li>
                 <li>
                   <Link href="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Support</Link>
                 </li>
-              </Dropdown>
+              </Dropdown> */}
               <li>
-                <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+                {/* <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link> */}
+                <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
               </li>
               <li>
                 <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About</Link>

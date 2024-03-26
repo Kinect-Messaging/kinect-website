@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
 
+// Temporarily converting to "COMING SOON PAGE"
 export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -22,9 +23,9 @@ export default function NotFound() {
                     <path d="M4.532 30.45C15.785 23.25 24.457 12.204 29.766.199c.034-.074-.246-.247-.3-.186-4.227 5.033-9.298 9.282-14.372 13.162C10 17.07 4.919 20.61.21 24.639c-1.173 1.005 2.889 6.733 4.322 5.81M18.96 42.198c12.145-4.05 24.12-8.556 36.631-12.365.076-.024.025-.349-.055-.347-6.542.087-13.277.083-19.982.827-6.69.74-13.349 2.24-19.373 5.197-1.53.75 1.252 7.196 2.778 6.688" />
                   </svg>
                 </div>
-                <h1 className="h1 font-playfair-display text-slate-800 mb-4">Oops!</h1>
+                <h1 className="h1 font-playfair-display text-slate-800 mb-4">Coming Soon!</h1>
               </div>
-              <p className="text-xl text-slate-500">We couldn't find the page you're looking for.</p>
+              <p className="text-xl text-slate-500">Elevate your expectations. Our latest creation debuts soon.</p>
               <div className="mt-8">
                 <Link className="btn text-white bg-blue-600 hover:bg-blue-700" href="/">Back Home</Link>
               </div>
