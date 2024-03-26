@@ -32,10 +32,10 @@ export default function Footer() {
             <h6 className="text-sm text-slate-800 font-semibold mb-2">How it works</h6>
             <ul className="text-sm font-medium space-y-2">
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Overview</a>
+                <a href="/" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Overview</a>
               </li>
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Pricing</a>
+                <a href="404" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Pricing</a>
               </li>
               {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Service Areas</a>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Knowledge Base</a>
               </li> */}
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Contact Us</a>
+                <a href="mailto:contact@kinectmessaging.com" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -64,7 +64,7 @@ export default function Footer() {
             <h6 className="text-sm text-slate-800 font-semibold mb-2">Products</h6>
             <ul className="text-sm font-medium space-y-2">
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Features</a>
+                <a href="features" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Features</a>
               </li>
               {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Secure Identity</a>
@@ -83,13 +83,13 @@ export default function Footer() {
             <h6 className="text-sm text-slate-800 font-semibold mb-2">Company</h6>
             <ul className="text-sm font-medium space-y-2">
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">About Us</a>
+                <a href="about" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">About Us</a>
               </li>
               {/* <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Careers</a>
               </li> */}
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Terms of Use</a>
+                <a href="404" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">Terms of Use</a>
               </li>
             </ul>
           </div>
