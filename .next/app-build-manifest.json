@@ -11,21 +11,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
+    "/(default)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(default)/page.js"
+    ],
     "/(default)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(default)/layout.css",
       "static/chunks/app/(default)/layout.js"
-    ],
-    "/(default)/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(default)/about/page.js"
-    ],
-    "/(default)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(default)/page.js"
     ]
   }
 }
