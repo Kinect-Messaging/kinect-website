@@ -6,8 +6,10 @@ export const metadata = {
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/components/ui/logo'
+import LogoBanner from '@/components/ui/logoBanner'
 import PageBG from '@/public/images/sign-in-bg.jpg'
 import CustomerAvatar from '@/public/images/customer-avatar-05.jpg'
+import DarkLogo from '@/components/ui/darkLogo'
 
 export default function SignIn() {
   return (
@@ -22,7 +24,7 @@ export default function SignIn() {
 
               {/* Site branding */}
               <div className="mb-6">
-                <Logo />
+                <DarkLogo />
               </div>
 
               <h1 className="h2 font-playfair-display text-slate-800 mb-12">Sign in to Kinect</h1>
@@ -94,6 +96,7 @@ export default function SignIn() {
         {/* Quote */}
         <div className="min-h-screen h-full flex flex-col justify-center">
           <div className="px-5 sm:px-6">
+            <LogoBanner />
             <div className="w-full max-w-lg mx-auto">
               <h2 className="h3 md:text-5xl font-playfair-display text-slate-100 mb-4">Unify.</h2>
               <h2 className="h3 md:text-5xl font-playfair-display text-slate-100 mb-4">Amplify.</h2>
