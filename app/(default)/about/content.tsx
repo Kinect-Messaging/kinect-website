@@ -11,6 +11,13 @@ export default function AboutContent() {
               <p className="mb-8">
                 To enable organizations to successfully connect with their customers through technology, data, and transparency end to end.
               </p>
+              <h2 className="h3 font-playfair-display text-slate-800 mb-4 mt-12">Our Story</h2>
+              <p className="mb-8">
+                When you combine a passion for solving Customer pain points, incredible people with expertise to get it done, and meaningful
+                solutions, it creates value. We believe in connecting the Customer journey, messaging, and performance so that there is a
+                holistic view of what's happening, why, and a relentless pursuit for continuous improvement. At Kinect Messaging, we believe
+                in unifying is gratifying.
+              </p>
               {/* <p className="mb-8">
                 Temper auctor neque vitae tempus quam pellentesque nec. Amet dictum sit amet justo donec enim diam. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Odio pellentesque diam volutpat commodo sed. Elit sed vulputate mi sit amet mauris commodo quis imperdiet.
               </p> */}

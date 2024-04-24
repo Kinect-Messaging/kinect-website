@@ -32,7 +32,7 @@ export default function TeamMembers() {
               <div className="font-medium text-blue-600">Co-Founder, Operations</div>
             </div>
 
-            {/* 2nd member */}
+            {/* 2nd member */} 
             <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={100}>
               <div className="inline-flex mb-4">
                 <Image className="rounded-full" src={TeamMemberImage02} width={120} height={120} alt="Member 02" />

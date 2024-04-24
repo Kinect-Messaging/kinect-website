@@ -77,7 +77,7 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Supplemental</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Execution</a>
               </h3>
               <p className="text-lg text-slate-500">
                 We provide subject matter experts that work with you that can lead and / or support your initiatives and activities.
