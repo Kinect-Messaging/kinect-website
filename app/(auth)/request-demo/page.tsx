@@ -43,6 +43,10 @@ export default function RequestDemo() {
                     <input id="email" className="form-input py-2 w-full" type="email" required />
                   </div>
                   <div>
+                    <label className="block text-sm font-medium mb-1" htmlFor="email">Mobile Number <span className="text-rose-500">*</span></label>
+                    <input id="email" className="form-input py-2 w-full" type="email" required />
+                  </div>
+                  <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="name">Contact Name <span className="text-rose-500">*</span></label>
                     <input id="name" className="form-input py-2 w-full" type="text" required />
                   </div>
@@ -51,15 +55,15 @@ export default function RequestDemo() {
                       <label className="block text-sm font-medium mb-1" htmlFor="city">City <span className="text-rose-500">*</span></label>
                       <input id="city" className="form-input py-2 w-full" type="text" required />
                     </div>
-                    <div className="sm:w-1/2">
+                    {/* <div className="sm:w-1/2">
                       <label className="block text-sm font-medium mb-1" htmlFor="pcode">Postal Code <span className="text-rose-500">*</span></label>
                       <input id="pcode" className="form-input py-2 w-full" type="text" required />
-                    </div>
+                    </div> */}
                   </div>
-                  <div>
+                  {/* <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="address">Street Address <span className="text-rose-500">*</span></label>
                     <input id="address" className="form-input py-2 w-full" type="text" required />
-                  </div>
+                  </div> */}
                   <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="country">Country <span className="text-rose-500">*</span></label>
                     <select id="country" className="form-select py-2 w-full" required>
@@ -68,6 +72,7 @@ export default function RequestDemo() {
                       <option>Germany</option>
                     </select>
                   </div>
+                  
                 </div>
                 <div className="mt-6">
                   <button className="btn-sm w-full text-sm text-white bg-blue-600 hover:bg-blue-700 group">

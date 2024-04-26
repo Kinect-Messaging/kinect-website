@@ -20,7 +20,7 @@ export default function Home() {
       {/* <Features /> */}
       {/* <Features02 /> */}
       <Features03 />
-      {/* <Target /> */}
+      <Target />
       {/* <PricingSection /> */}
       <Cta />
     </>
