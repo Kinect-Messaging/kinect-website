@@ -8,7 +8,7 @@ import TeamMemberImage06 from '@/public/images/team-member-06.jpg'
 import TeamMemberImage07 from '@/public/images/team-member-07.jpg'
 import TeamMemberImage08 from '@/public/images/team-member-08.jpg'
 
-export default function TeamMembers() {  
+export default function TeamMembers() {
   return (
     <section>
 
@@ -21,18 +21,10 @@ export default function TeamMembers() {
           </div>
 
           {/* Team members */}
-          <div className="relative max-w-sm mx-auto grid gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-20 items-start sm:max-w-xl lg:max-w-none" data-aos-id-team>
+          {/* <div className="relative max-w-sm mx-auto grid gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-20 items-start sm:max-w-xl lg:max-w-none" data-aos-id-team> */}
+          <div className="grid gap-y-12 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto items-start justify-center" data-aos-id-team>
 
             {/* 1st member */}
-            <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]">
-              <div className="inline-flex mb-4">
-                <Image className="rounded-full" src={TeamMemberImage01} width={120} height={120} alt="Member 01" />
-              </div>
-              <h4 className="h4 font-playfair-display text-slate-800 mb-2">Al Garay</h4>
-              <div className="font-medium text-blue-600">Co-Founder, Operations</div>
-            </div>
-
-            {/* 2nd member */} 
             <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={100}>
               <div className="inline-flex mb-4">
                 <Image className="rounded-full" src={TeamMemberImage02} width={120} height={120} alt="Member 02" />
@@ -41,7 +33,7 @@ export default function TeamMembers() {
               <div className="font-medium text-blue-600">Co-Founder, Technology</div>
             </div>
 
-            {/* 3rd member */}
+            {/* 2nd member */}
             <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={200}>
               <div className="inline-flex mb-4">
                 <Image className="rounded-full" src={TeamMemberImage03} width={120} height={120} alt="Member 03" />
@@ -50,7 +42,7 @@ export default function TeamMembers() {
               <div className="font-medium text-blue-600">Co-Founder, Product</div>
             </div>
 
-            {/* 4th member */}
+            {/* 3rd member */}
             <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={300}>
               <div className="inline-flex mb-4">
                 <Image className="rounded-full" src={TeamMemberImage04} width={120} height={120} alt="Member 04" />

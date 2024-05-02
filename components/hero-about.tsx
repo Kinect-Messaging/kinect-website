@@ -18,7 +18,7 @@ export default function HeroAbout() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-16">
-            <h1 className="h1 font-playfair-display text-slate-100">Connecting the customer experience, messaging, and behavior.</h1>
+            <h1 className="h1 font-playfair-display text-slate-900">Connecting the customer experience, messaging, and behavior.</h1>
           </div>
 
           {/* Hero image */}

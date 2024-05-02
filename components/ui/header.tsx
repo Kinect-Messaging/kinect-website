@@ -39,8 +39,8 @@ export default function Header({ mode = 'dark' }: {
                 </li>
               </Dropdown> */}
               <li>
-                {/* <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link> */}
-                <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+                <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+                {/* <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link> */}
               </li>
               <li>
                 <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About</Link>

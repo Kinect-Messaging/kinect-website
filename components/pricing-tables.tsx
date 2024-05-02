@@ -21,15 +21,19 @@ export default function PricingTables() {
         <div className="text-sm text-slate-500 font-medium min-w-[8rem]">Pay Yearly <span className="text-emerald-500">(-20%)</span></div>
       </div>
 
+      <div className="flex justify-center items-center space-x-4 sm:space-x-7 mb-16">
+        <h1 className="text-sm text-slate-500 font-medium text-right min-w-[8rem]">Build pricing slider here!</h1>
+      </div>
+
       <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-4">
 
         {/* Pricing table 1 */}
         <div className="relative flex flex-col h-full px-6 py-5 bg-slate-900 shadow-lg" data-aos="fade-up">
           <div className="mb-4 pb-4 border-b border-slate-200">
-            <div className="text-lg font-semibold text-slate-200 mb-1">Essential</div>
+            <div className="text-lg font-semibold text-slate-200 mb-1">Free</div>
             <div className="inline-flex items-baseline mb-3">
               <span className="h3 font-medium text-slate-200">$</span>
-              <span className="h2 leading-7 font-playfair-display text-slate-200">{annual ? '49' : '55'}</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-200">{annual ? '0' : '0'}</span>
               <span className="font-medium text-slate-200">/mo</span>
             </div>
             <div className="text-slate-200">Better insights for growing businesses that want more customers.</div>

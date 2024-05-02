@@ -14,8 +14,8 @@ export default function FeaturesHome03() {
         <div className="py-12 md:py-20">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-playfair-display text-slate-100">Full Service offerings from strategy to execution</h2>
+          <div className="max-w-5xl mx-auto text-center pb-12 md:pb-22">
+            <h2 className="h2 font-playfair-display text-slate-100">Kinect Messaging provides a holistic approach to enable organizations to sustain and realize value immediately.</h2>
           </div>
 
           {/* Section content */}
