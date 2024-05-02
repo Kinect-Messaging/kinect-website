@@ -2373,9 +2373,6 @@ input[type=range]::-moz-focus-outer {
 .mt-8 {
   margin-top: 2rem;
 }
-.-mt-1 {
-  margin-top: -0.25rem;
-}
 .box-border {
   box-sizing: border-box;
 }
@@ -2791,9 +2788,6 @@ input[type=range]::-moz-focus-outer {
 }
 .max-w-xs {
   max-width: 20rem;
-}
-.max-w-7xl {
-  max-width: 80rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -6067,10 +6061,6 @@ input[type=range]::-moz-focus-outer {
 
   .md\:pt-40 {
     padding-top: 10rem;
-  }
-
-  .md\:pb-2 {
-    padding-bottom: 0.5rem;
   }
 
   .md\:text-left {

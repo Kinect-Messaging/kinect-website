@@ -11,90 +11,90 @@ export default function PricingSliderTables() {
   const [annual, setAnnual] = useState<boolean>(true)
   const [premiumCost, setPremiumCost] = useState(defPremCost);
 
-  const SliderComponent: React.FC = () => {
+  // const SliderComponent: React.FC = () => {
 
-    const [value, setValue] = useState(minValue);
-    const [inputValue, setInputValue] = useState(minValue.toString());
+  //   const [value, setValue] = useState(minValue);
+  //   const [inputValue, setInputValue] = useState(minValue.toString());
 
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const v = e.target.value;
+  //   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //     const v = e.target.value;
 
-      if (!isNaN(Number(v))) {
-        setInputValue(v);
-      }
-    };
+  //     if (!isNaN(Number(v))) {
+  //       setInputValue(v);
+  //     }
+  //   };
 
-    const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-      if (e.key === "Enter") {
-        const numericValue = Number(inputValue);
+  //   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  //     if (e.key === "Enter") {
+  //       const numericValue = Number(inputValue);
 
-        if (!isNaN(numericValue)) {
-          if (numericValue < minValue) {
-            setValue(minValue);
-            setInputValue(minValue.toString());
-          } else if (numericValue > maxValue) {
-            setValue(maxValue);
-            setInputValue(maxValue.toString());
-          } else {
-            setValue(numericValue);
-          }
-        }
-      }
-    };
+  //       if (!isNaN(numericValue)) {
+  //         if (numericValue < minValue) {
+  //           setValue(minValue);
+  //           setInputValue(minValue.toString());
+  //         } else if (numericValue > maxValue) {
+  //           setValue(maxValue);
+  //           setInputValue(maxValue.toString());
+  //         } else {
+  //           setValue(numericValue);
+  //         }
+  //       }
+  //     }
+  //   };
 
-    const handleChange = (value: SetStateAction<number>) => {
-      setValue(value);
-      setInputValue(value.toString());
-    };
+  //   const handleChange = (value: SetStateAction<number>) => {
+  //     setValue(value);
+  //     setInputValue(value.toString());
+  //   };
 
-    // Callback to update premiumCost in the parent component
-    // useEffect(() => {
-    //   if (value > 10000) {
-    //     setPremiumCost(value * 0.005);
-    //   } else {
-    //     setPremiumCost(defPremCost)
-    //   }
-    // }, [value]);
+  //   // Callback to update premiumCost in the parent component
+  //   // useEffect(() => {
+  //   //   if (value > 10000) {
+  //   //     setPremiumCost(value * 0.005);
+  //   //   } else {
+  //   //     setPremiumCost(defPremCost)
+  //   //   }
+  //   // }, [value]);
 
-    return (
-      <div className="flex justify-center">
-        <div className="w-full max-w-lg mx-auto">
-          <Slider
-            label="Email Count"
-            size="md"
-            step={10000}
-            maxValue={maxValue}
-            minValue={minValue}
-            color="foreground"
-            classNames={{
-              base: "max-w-lg",
-              label: "text-medium",
-            }}
-            renderValue={({ children, ...props }) => (
-              <output {...props}>
-                <Tooltip
-                  className="text-tiny text-default-500 rounded-md"
-                  content="Press Enter to confirm"
-                  placement="left"
-                >
-                  <input
-                    className="px-1 py-0.5 w-20 text-right text-small text-default-700 font-medium bg-default-100 outline-none transition-colors rounded-small border-medium border-transparent hover:border-primary focus:border-primary"
-                    type="text"
-                    aria-label="Email Count value"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                    onKeyDown={handleInputKeyDown}
-                  />
-                </Tooltip>
-              </output>
-            )}
-            value={value}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="flex justify-center">
+  //       <div className="w-full max-w-lg mx-auto">
+  //         <Slider
+  //           label="Email Count"
+  //           size="md"
+  //           step={10000}
+  //           maxValue={maxValue}
+  //           minValue={minValue}
+  //           color="foreground"
+  //           classNames={{
+  //             base: "max-w-lg",
+  //             label: "text-medium",
+  //           }}
+  //           renderValue={({ children, ...props }) => (
+  //             <output {...props}>
+  //               <Tooltip
+  //                 className="text-tiny text-default-500 rounded-md"
+  //                 content="Press Enter to confirm"
+  //                 placement="left"
+  //               >
+  //                 <input
+  //                   className="px-1 py-0.5 w-20 text-right text-small text-default-700 font-medium bg-default-100 outline-none transition-colors rounded-small border-medium border-transparent hover:border-primary focus:border-primary"
+  //                   type="text"
+  //                   aria-label="Email Count value"
+  //                   value={inputValue}
+  //                   onChange={handleInputChange}
+  //                   onKeyDown={handleInputKeyDown}
+  //                 />
+  //               </Tooltip>
+  //             </output>
+  //           )}
+  //           value={value}
+  //           onChange={handleChange}
+  //         />
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
 
   return (

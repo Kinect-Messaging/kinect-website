@@ -14,7 +14,7 @@ export default function HeroPricing() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12">
             {/* <h1 className="h1 font-playfair-display text-slate-100">Find the right plan for your business</h1> */}
-            <h1 className='font-playfair-display h1 text-slate-900'>Find the right plan for your business</h1>
+            <h1 className='font-playfair-display h1 text-slate-100'>Find the right plan for your business</h1>
           </div>
 
           {/* <PricingTables /> */}

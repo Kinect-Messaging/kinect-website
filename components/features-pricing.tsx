@@ -4,90 +4,91 @@ import { Slider, Tooltip } from "@nextui-org/react";
 
 const minValue = 10000;
 const maxValue = 1000000;
-const SliderComponent: React.FC = () => {
 
-  const [value, setValue] = useState(minValue);
-  const [inputValue, setInputValue] = useState(minValue.toString());
+// const SliderComponent: React.FC = () => {
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const v = e.target.value;
+//   const [value, setValue] = useState(minValue);
+//   const [inputValue, setInputValue] = useState(minValue.toString());
 
-    if (!isNaN(Number(v))) {
-      setInputValue(v);
-    }
-  };
+//   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     const v = e.target.value;
 
-  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      const numericValue = Number(inputValue);
+//     if (!isNaN(Number(v))) {
+//       setInputValue(v);
+//     }
+//   };
 
-      if (!isNaN(numericValue)) {
-        if (numericValue < minValue) {
-          setValue(minValue);
-          setInputValue(minValue.toString());
-        } else if (numericValue > maxValue) {
-          setValue(maxValue);
-          setInputValue(maxValue.toString());
-        } else {
-          setValue(numericValue);
-        }
-      }
-    }
-  };
+//   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+//     if (e.key === "Enter") {
+//       const numericValue = Number(inputValue);
 
-  const handleChange = (value: SetStateAction<number>) => {
-    setValue(value);
-    setInputValue(value.toString());
-  };
+//       if (!isNaN(numericValue)) {
+//         if (numericValue < minValue) {
+//           setValue(minValue);
+//           setInputValue(minValue.toString());
+//         } else if (numericValue > maxValue) {
+//           setValue(maxValue);
+//           setInputValue(maxValue.toString());
+//         } else {
+//           setValue(numericValue);
+//         }
+//       }
+//     }
+//   };
 
-  // Callback to update premiumCost in the parent component
-  // useEffect(() => {
-  //   if (value > 10000) {
-  //     setPremiumCost(value * 0.005);
-  //   } else {
-  //     setPremiumCost(defPremCost)
-  //   }
-  // }, [value]);
+//   const handleChange = (value: SetStateAction<number>) => {
+//     setValue(value);
+//     setInputValue(value.toString());
+//   };
 
-  return (
-    <div className="flex justify-center">
-      <div className="w-full max-w-lg mx-auto">
-        <Slider
-          label="Email Count"
-          size="md"
-          step={10000}
-          maxValue={maxValue}
-          minValue={minValue}
-          color="foreground"
-          classNames={{
-            base: "max-w-lg",
-            label: "text-medium",
-          }}
-          renderValue={({ children, ...props }) => (
-            <output {...props}>
-              <Tooltip
-                className="text-tiny text-default-500 rounded-md"
-                content="Press Enter to confirm"
-                placement="left"
-              >
-                <input
-                  className="px-1 py-0.5 w-20 text-right text-small text-default-700 font-medium bg-default-100 outline-none transition-colors rounded-small border-medium border-transparent hover:border-primary focus:border-primary"
-                  type="text"
-                  aria-label="Email Count value"
-                  value={inputValue}
-                  onChange={handleInputChange}
-                  onKeyDown={handleInputKeyDown}
-                />
-              </Tooltip>
-            </output>
-          )}
-          value={value}
-          onChange={handleChange}
-        />
-      </div>
-    </div>
-  );
-};
+//   // Callback to update premiumCost in the parent component
+//   // useEffect(() => {
+//   //   if (value > 10000) {
+//   //     setPremiumCost(value * 0.005);
+//   //   } else {
+//   //     setPremiumCost(defPremCost)
+//   //   }
+//   // }, [value]);
+
+//   return (
+//     <div className="flex justify-center">
+//       <div className="w-full max-w-lg mx-auto">
+//         <Slider
+//           label="Email Count"
+//           size="md"
+//           step={10000}
+//           maxValue={maxValue}
+//           minValue={minValue}
+//           color="foreground"
+//           classNames={{
+//             base: "max-w-lg",
+//             label: "text-medium",
+//           }}
+//           renderValue={({ children, ...props }) => (
+//             <output {...props}>
+//               <Tooltip
+//                 className="text-tiny text-default-500 rounded-md"
+//                 content="Press Enter to confirm"
+//                 placement="left"
+//               >
+//                 <input
+//                   className="px-1 py-0.5 w-20 text-right text-small text-default-700 font-medium bg-default-100 outline-none transition-colors rounded-small border-medium border-transparent hover:border-primary focus:border-primary"
+//                   type="text"
+//                   aria-label="Email Count value"
+//                   value={inputValue}
+//                   onChange={handleInputChange}
+//                   onKeyDown={handleInputKeyDown}
+//                 />
+//               </Tooltip>
+//             </output>
+//           )}
+//           value={value}
+//           onChange={handleChange}
+//         />
+//       </div>
+//     </div>
+//   );
+// };
 
 
 export default function FeaturesPricing() {
@@ -323,7 +324,7 @@ export default function FeaturesPricing() {
               <h3 className="h4 font-playfair-display mb-2">Email Frequency</h3>
               <p className="text-lg text-slate-500 mb-3">Select the number of Emails you intend to send per month</p>
               <div>
-                <SliderComponent />
+                {/* <SliderComponent /> */}
               </div>
             </div>
 
