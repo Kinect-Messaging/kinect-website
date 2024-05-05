@@ -1,10 +1,15 @@
 'use client'
 
-import { useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
+import { Slider, Tooltip } from "@nextui-org/react";
 
-export default function PricingTables() {
+export default function PricingSliderTables() {
 
+  const minValue = 10000;
+  const maxValue = 1000000;
+  const defPremCost = 50
   const [annual, setAnnual] = useState<boolean>(true)
+  const [premiumCost, setPremiumCost] = useState(defPremCost);
 
   return (
     <div>
@@ -21,53 +26,65 @@ export default function PricingTables() {
         <div className="text-sm text-slate-500 font-medium min-w-[8rem]">Pay Yearly <span className="text-emerald-500">(-20%)</span></div>
       </div>
 
-      <div className="flex justify-center items-center space-x-4 sm:space-x-7 mb-16">
-        <h1 className="text-sm text-slate-500 font-medium text-right min-w-[8rem]">Build pricing slider here!</h1>
+      {/* Variable Pricing Slider */}
+      <div>
+        <div className="flex justify-center items-center space-x-4 sm:space-x-7">
+          <div className='text-xl text-slate-100'>Choose from one of our recommended plans or Build Your Own below!</div>
+        </div>
+        <div className='mb-16'>
+        </div>
       </div>
+
 
       <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-4">
 
         {/* Pricing table 1 */}
-        <div className="relative flex flex-col h-full px-6 py-5 bg-slate-900 shadow-lg" data-aos="fade-up">
+        <div className="relative flex flex-col h-full px-6 py-5 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100">
           <div className="mb-4 pb-4 border-b border-slate-200">
-            <div className="text-lg font-semibold text-slate-200 mb-1">Free</div>
+            <div className="text-lg font-semibold text-slate-800 mb-1">Free</div>
             <div className="inline-flex items-baseline mb-3">
-              <span className="h3 font-medium text-slate-200">$</span>
-              <span className="h2 leading-7 font-playfair-display text-slate-200">{annual ? '0' : '0'}</span>
-              <span className="font-medium text-slate-200">/mo</span>
+              <span className="h3 font-medium text-slate-500">$</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-800">0</span>
+              <span className="font-medium text-slate-400">/mo</span>
             </div>
-            <div className="text-slate-200">Better insights for growing businesses that want more customers.</div>
+            <div className="text-slate-500">Basic features to activate your Business and engage with your Customers.</div>
           </div>
-          <div className="font-medium mb-3 text-slate-200">Features include:</div>
-          <ul className="text-slate-200 space-y-3 grow mb-6">
+          <div className="font-medium mb-3">Features include:</div>
+          <ul className="text-slate-500 space-y-3 grow mb-6">
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>50 Placeholder text commonly</span>
+              <span>Up to 3 Managed User Accounts</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Consectetur adipiscing elit</span>
+              <span>Delivery up to 10K emails/day</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Excepteur sint occaecat cupidatat</span>
+              <span>Customer Message Creation</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Officia deserunt mollit anim</span>
+              <span>Customer Message Delivery</span>
+            </li>
+            <li className="flex items-center">
+              <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+              </svg>
+              <span>Customer Message Delivery Data</span>
             </li>
           </ul>
-          <div>
+          <div className="p-3 rounded bg-slate-50">
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#0">
-              Start free trial <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+              Get Started <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
             </a>
           </div>
         </div>
@@ -81,47 +98,41 @@ export default function PricingTables() {
             <div className="text-lg font-semibold text-slate-800 mb-1">Premium</div>
             <div className="inline-flex items-baseline mb-3">
               <span className="h3 font-medium text-slate-500">$</span>
-              <span className="h2 leading-7 font-playfair-display text-slate-800">{annual ? '79' : '85'}</span>
+              <span className="h2 leading-7 font-playfair-display text-slate-800">{annual ? premiumCost : (premiumCost + 5)}</span>
               <span className="font-medium text-slate-400">/mo</span>
             </div>
-            <div className="text-slate-500">Better insights for growing businesses that want more customers.</div>
+            <div className="text-slate-500">Advanced features to take your Business to the next level delighting your Customers.</div>
           </div>
-          <div className="font-medium mb-3">All features of Essential plus:</div>
+          <div className="font-medium mb-3">All features of Free plus:</div>
           <ul className="text-slate-500 space-y-3 grow mb-6">
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>100 placeholder text commonly</span>
+              <span>Up to 10 Managed User Accounts</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Consectetur adipiscing elit</span>
+              <span>Delivery up to 100K emails/day</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Excepteur sint occaecat cupidatat</span>
+              <span>Delivery Data Dashboards</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Officia deserunt mollit anim</span>
-            </li>
-            <li className="flex items-center">
-              <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-              </svg>
-              <span>Placeholder text commonly used</span>
+              <span>Customer Journey Mapping</span>
             </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#0">
-              Start free trial <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+              Get Started <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
             </a>
           </div>
         </div>
@@ -129,60 +140,53 @@ export default function PricingTables() {
         {/* Pricing table 3 */}
         <div className="relative flex flex-col h-full px-6 py-5 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="200">
           <div className="mb-4 pb-4 border-b border-slate-200">
-            <div className="text-lg font-semibold text-slate-800 mb-1">Advanced</div>
-            <div className="inline-flex items-baseline mb-3">
+            <div className="text-lg font-semibold text-slate-800 mb-1">Enterprise</div>
+            {/* <div className="inline-flex items-baseline mb-3">
               <span className="h3 font-medium text-slate-500">$</span>
               <span className="h2 leading-7 font-playfair-display text-slate-800">{annual ? '129' : '135'}</span>
               <span className="font-medium text-slate-400">/mo</span>
-            </div>
-            <div className="text-slate-500">Better insights for growing businesses that want more customers.</div>
+            </div> */}
+            <div className="text-slate-500">We'll collaborate closely with you to deliver premium features that seamlessly scale to meet your business's evolving needs.</div>
           </div>
-          <div className="font-medium mb-3">All features of Essential plus:</div>
+          <div className="font-medium mb-3">All features of Premium plus:</div>
           <ul className="text-slate-500 space-y-3 grow mb-6">
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>200 placeholder text commonly</span>
+              <span>Custom No. of Managed Users</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Consectetur adipiscing elit</span>
+              <span>Delivery of 100M+ emails/day</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Excepteur sint occaecat cupidatat</span>
+              <span>99.99% of SLA</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Officia deserunt mollit anim</span>
+              <span>Enterprise Rate Limits</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Voluptate velit esse cillum</span>
-            </li>
-            <li className="flex items-center">
-              <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-              </svg>
-              <span>Placeholder text commonly used</span>
+              <span>Enterprise Grade Support and Consultancy</span>
             </li>
           </ul>
           <div className="p-3 rounded bg-slate-50">
             <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 w-full group" href="#0">
-              Start free trial <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+              Contact Us <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
             </a>
           </div>
         </div>
-
       </div>
 
     </div>

@@ -2,8 +2,8 @@
 import { SetStateAction, useEffect, useState } from 'react'
 import { Slider, Tooltip } from "@nextui-org/react";
 
-const minValue = 10000;
-const maxValue = 1000000;
+// const minValue = 10000;
+// const maxValue = 1000000;
 
 // const SliderComponent: React.FC = () => {
 
@@ -92,9 +92,61 @@ const maxValue = 1000000;
 
 
 export default function FeaturesPricing() {
-  const [personalization, setPersonalization] = useState<boolean>(true)
-  const [mapping, setMapping] = useState<boolean>(true)
-  const [dataDash, setDataDash] = useState<boolean>(true)
+  const [personalization, setPersonalization] = useState<boolean>(false)
+  const [mapping, setMapping] = useState<boolean>(false)
+  const [dataDash, setDataDash] = useState<boolean>(false)
+
+  const [emailFrequency, setEmailFrequency] = useState<number>(10000);
+  const [estimatedCost, setEstimatedCost] = useState<number>(0);
+
+  // Toggle handlers that also update the estimated cost
+  const handlePersonalizationToggle = () => {
+    setPersonalization(prevState => {
+      const newState = !prevState;
+      setEstimatedCost(calculateCost(newState, mapping, dataDash, emailFrequency));
+      return newState;
+    });
+  };
+
+  const handleMappingToggle = () => {
+    setMapping(prevState => {
+      const newState = !prevState;
+      setEstimatedCost(calculateCost(personalization, newState, dataDash, emailFrequency));
+      return newState;
+    });
+  };
+
+  const handleDataDashToggle = () => {
+    setDataDash(prevState => {
+      const newState = !prevState;
+      setEstimatedCost(calculateCost(personalization, mapping, newState, emailFrequency));
+      return newState;
+    });
+  };
+
+  // Handler to update email frequency and estimated cost
+  const handleFrequencyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let newFrequency = parseInt(e.target.value, 10);
+    // Check and adjust the frequency to ensure it does not exceed 1000000
+    if (newFrequency > 1000000) {
+      newFrequency = 1000000;
+    }
+    setEmailFrequency(newFrequency);
+    setEstimatedCost(calculateCost(personalization, mapping, dataDash, newFrequency));
+  };
+
+  // Updated calculateCost to accept the new email frequency as a parameter
+  const calculateCost = (personalization: boolean, mapping: boolean, dataDash: boolean, emailFreq: number) => {
+    let cost = 0; // base cost
+    if (emailFreq > 10000) {
+      cost += 0.005 * (emailFreq - 10000);
+    }
+    if (personalization) cost += 10;
+    if (mapping) cost += 10;
+    if (dataDash) cost += 10;
+    return cost;
+  };
+
 
   return (
     <section className="bg-slate-100">
@@ -155,11 +207,14 @@ export default function FeaturesPricing() {
                 <use fill="url(#fbp1-g)" xlinkHref="#fbp1-i" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Advanced Personalization</h3>
-              <p className="text-lg text-slate-500 mb-3">*Description of Advanced Personalization*</p>
+              <p className="text-lg text-slate-500 mb-3">
+                Create personalized and precise Customer experiences for every touchpoint that adapts to their preferences,
+                predicts their needs, and delivers content suited to them.
+              </p>
               <div className="font-bold text-slate-800">$10/mo</div>
               <div>
                 <div className="form-switch">
-                  <input type="checkbox" id="persToggle" className="sr-only" checked={personalization} onChange={() => setPersonalization(!personalization)} />
+                  <input type="checkbox" id="persToggle" className="sr-only" checked={personalization} onChange={handlePersonalizationToggle} />
                   <label className="bg-slate-700" htmlFor="persToggle">
                     <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
                   </label>
@@ -205,11 +260,14 @@ export default function FeaturesPricing() {
                 <use fill="url(#fbp2-g)" xlinkHref="#fbp2-f" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Customer Journey Mapping</h3>
-              <p className="text-lg text-slate-500 mb-3">*Description of Customer Journey Mapping*</p>
+              <p className="text-lg text-slate-500 mb-3">
+                Create holistic end to end Customer Journeys at every touchpoint, identify pain points,
+                and optimize interactions for a smoother, more personalized experience.
+              </p>
               <div className="font-bold text-slate-800">$10/mo</div>
               <div>
                 <div className="form-switch">
-                  <input type="checkbox" id="mapToggle" className="sr-only" checked={mapping} onChange={() => setMapping(!mapping)} />
+                  <input type="checkbox" id="mapToggle" className="sr-only" checked={mapping} onChange={handleMappingToggle} />
                   <label className="bg-slate-700" htmlFor="mapToggle">
                     <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
                   </label>
@@ -264,11 +322,14 @@ export default function FeaturesPricing() {
                 <use fillOpacity=".64" fill="#BFDBFE" xlinkHref="#fbp3-i" />
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Advanced Data & Dashboards</h3>
-              <p className="text-lg text-slate-500 mb-3">*Description of Advanced Data & Dashboards*</p>
+              <p className="text-lg text-slate-500 mb-3">
+                Powerful data analytics and visualizations to dive deep into message trends,
+                engagement metrics, and user behavior.
+              </p>
               <div className="font-bold text-slate-800">$10/mo</div>
               <div>
                 <div className="form-switch">
-                  <input type="checkbox" id="dataToggle" className="sr-only" checked={dataDash} onChange={() => setDataDash(!dataDash)} />
+                  <input type="checkbox" id="dataToggle" className="sr-only" checked={dataDash} onChange={handleDataDashToggle} />
                   <label className="bg-slate-700" htmlFor="dataToggle">
                     <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
                   </label>
@@ -323,8 +384,18 @@ export default function FeaturesPricing() {
               </svg>
               <h3 className="h4 font-playfair-display mb-2">Email Frequency</h3>
               <p className="text-lg text-slate-500 mb-3">Select the number of Emails you intend to send per month</p>
+              <div className="font-bold text-slate-800">$0.005/mo</div>
               <div>
-                {/* <SliderComponent /> */}
+                <div>
+                  <input
+                    type="number"
+                    className="form-input border border-gray-300 rounded-md"
+                    value={emailFrequency}
+                    onChange={handleFrequencyChange}  // Updated to use the new handler
+                    min={10000}
+                    max={1000000}
+                  />
+                </div>
               </div>
             </div>
 
@@ -342,7 +413,8 @@ export default function FeaturesPricing() {
                   {/* <div className="absolute top-0 left-0 ml-6 -mt-4">
                     <div className="inline-flex text-sm font-semibold py-1 px-3 text-emerald-700 bg-emerald-200 rounded-full">For Young Startups</div>
                   </div> */}
-                  <div className="h4 font-playfair-display text-center lg:text-left mb-4 lg:mb-0">Your Plan's Estimated Cost: $30</div>
+                  {/* <div className="h4 font-playfair-display text-center lg:text-left mb-4 lg:mb-0">Your Plan's Estimated Cost: $30</div> */}
+                  <div className="h4 font-playfair-display text-center lg:text-left mb-4 lg:mb-0">Your Plan's Estimated Cost: ${estimatedCost.toFixed(2)}</div>
                   <div className="p-3 rounded bg-slate-50">
                     <a className="btn-sm text-white bg-blue-600 hover:bg-blue-700 group" href="#0">
                       Get Started <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>

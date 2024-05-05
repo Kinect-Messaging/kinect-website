@@ -1,5 +1,4 @@
 import PricingTables from './pricing-tables';
-import PricingSliderTables from './pricing-slider-tables';
 
 export default function HeroPricing() {  
   return (
@@ -17,8 +16,7 @@ export default function HeroPricing() {
             <h1 className='font-playfair-display h1 text-slate-100'>Find the right plan for your business</h1>
           </div>
 
-          {/* <PricingTables /> */}
-          <PricingSliderTables />
+          <PricingTables />
 
         </div>
       </div>

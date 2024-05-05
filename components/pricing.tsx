@@ -1,5 +1,4 @@
 import PricingTables from './pricing-tables';
-import PricingSliderTables from './pricing-slider-tables';
 
 export default function Pricing() {
   return (
@@ -16,7 +15,7 @@ export default function Pricing() {
             {/* <h2 className="h2 font-playfair-display text-slate-100">Find the right plan for your business</h2> */}
           </div>
 
-          <PricingSliderTables />
+          <PricingTables />
 
         </div>
       </div>
