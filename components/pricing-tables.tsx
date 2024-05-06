@@ -103,7 +103,7 @@ export default function PricingSliderTables() {
             </div>
             <div className="text-slate-500">Advanced features to take your Business to the next level delighting your Customers.</div>
           </div>
-          <div className="font-medium mb-3">All features of Free plus:</div>
+          <div className="font-medium mb-3">Everything in Free plus:</div>
           <ul className="text-slate-500 space-y-3 grow mb-6">
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +148,7 @@ export default function PricingSliderTables() {
             </div> */}
             <div className="text-slate-500">We'll collaborate closely with you to deliver premium features that seamlessly scale to meet your business's evolving needs.</div>
           </div>
-          <div className="font-medium mb-3">All features of Premium plus:</div>
+          <div className="font-medium mb-3">Everything in Premium plus:</div>
           <ul className="text-slate-500 space-y-3 grow mb-6">
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +160,7 @@ export default function PricingSliderTables() {
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
               </svg>
-              <span>Delivery of 100M+ emails/day</span>
+              <span>Delivery of 1M+ emails/day</span>
             </li>
             <li className="flex items-center">
               <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
