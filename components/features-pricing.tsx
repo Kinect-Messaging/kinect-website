@@ -162,7 +162,7 @@ export default function FeaturesPricing() {
           <div className="relative max-w-sm mx-auto grid gap-8 lg:gap-16 md:grid-cols-3 lg:gap-y-20 items-start md:max-w-none">
 
             {/* 1st item */}
-            <div className="relative" data-aos="fade-up">
+            {/* <div className="relative" data-aos="fade-up">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <filter x="-50%" y="-35.7%" width="200%" height="200%" filterUnits="objectBoundingBox" id="fbp1-a">
@@ -220,7 +220,7 @@ export default function FeaturesPricing() {
                   </label>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* 2nd item */}
             <div className="relative" data-aos="fade-up" data-aos-delay="100">
@@ -259,7 +259,7 @@ export default function FeaturesPricing() {
                 <use fill="#000" filter="url(#fbp2-e)" xlinkHref="#fbp2-f" />
                 <use fill="url(#fbp2-g)" xlinkHref="#fbp2-f" />
               </svg>
-              <h3 className="h4 font-playfair-display mb-2">Customer Journey Mapping</h3>
+              <h3 className="h4 font-playfair-display mb-2">Customer Journey Builder</h3>
               <p className="text-lg text-slate-500 mb-3">
                 Create holistic end to end Customer Journeys at every touchpoint, identify pain points,
                 and optimize interactions for a smoother, more personalized experience.
