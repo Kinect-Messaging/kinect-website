@@ -1,4 +1,6 @@
 {
-  "/(default)/pricing/page": "app/(default)/pricing/page.js",
-  "/(default)/page": "app/(default)/page.js"
+  "/(default)/page": "app/(default)/page.js",
+  "/(default)/about/page": "app/(default)/about/page.js",
+  "/(auth)/request-demo/page": "app/(auth)/request-demo/page.js",
+  "/(default)/pricing/page": "app/(default)/pricing/page.js"
 }
