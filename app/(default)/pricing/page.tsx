@@ -17,7 +17,7 @@ export default function Pricing() {
       <CtaPricing />
       {/* <Features /> */}
       <FeaturesTable />
-      <Faqs />
+      {/* <Faqs /> */}
       <Cta />
     </>
   )
