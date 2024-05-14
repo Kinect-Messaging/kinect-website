@@ -1,6 +1,7 @@
 'use client'
 import Accordion from '@/components/utils/accordion'
 import { SetStateAction, useEffect, useState } from 'react'
+import Tooltip from '@/components/utils/tooltip'
 
 export default function Faqs() {
 
@@ -61,9 +62,45 @@ export default function Faqs() {
 
           {/* Faqs */}
           <ul className="max-w-3xl mx-auto divide-y divide-slate-200">
-            <Accordion title="Journey" active>
+            <Accordion title="Design & Dev" active>
+              {/* Design & Dev Table */}
+              <table className="table-auto w-full border-b border-slate-200">
+                <thead>
+                  <tr className="text-base sm:text-lg text-slate-800">
+                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Feature</th>
+                    <th className="text-bold text-center px-2 py-4">Toggle</th>
+                    <th className="text-bold text-center px-2 py-4">Price</th>
+                    {/* <th className="text-bold text-center px-2 py-4">Advanced</th> */}
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* Row */}
+                  <tr className="border-t first:border-t-2 border-slate-200">
+                    <td className="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                      <div className="flex items-center justify-between max-w-xs">
+                        <div>Customer Journey Builder</div>
+                        {/* Tooltip */}
+                        <Tooltip>
+                          <div className="text-xs text-slate-100 max-w-md rounded-md">Create holistic end to end Customer Journeys at every touchpoint, identify pain points, and optimize interactions for a smoother, more personalized experience.</div>
+                        </Tooltip>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">
+                      <div className='relative ml-2'>
+                        <div className="form-switch">
+                          <input type="checkbox" id="mapToggle" className="sr-only" checked={mapping} onChange={handleMappingToggle} />
+                          <label className="bg-slate-700" htmlFor="mapToggle">
+                            <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">$10/mo</td>
+                  </tr>
+                </tbody>
+              </table>
               {/* Journey */}
-              <div className="relative" data-aos="fade-up" data-aos-delay="100">
+              {/* <div className="relative" data-aos="fade-up" data-aos-delay="100">
                 <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <filter x="-70.7%" y="-50%" width="241.3%" height="240%" filterUnits="objectBoundingBox" id="fbp2-a">
@@ -113,12 +150,49 @@ export default function Faqs() {
                     </label>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Accordion>
 
-            <Accordion title="Data">
+            <Accordion title="Data & Dashboards">
+              {/* Data & Dashboards Table */}
+              <table className="table-auto w-full border-b border-slate-200">
+                <thead>
+                  <tr className="text-base sm:text-lg text-slate-800">
+                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Feature</th>
+                    <th className="text-bold text-center px-2 py-4">Toggle</th>
+                    <th className="text-bold text-center px-2 py-4">Price</th>
+                    {/* <th className="text-bold text-center px-2 py-4">Advanced</th> */}
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* Row */}
+                  <tr className="border-t first:border-t-2 border-slate-200">
+                    <td className="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                      <div className="flex items-center justify-between max-w-xs">
+                        <div>Advanced Data & Dashboards</div>
+                        {/* Tooltip */}
+                        <Tooltip>
+                          <div className="text-xs text-slate-100 max-w-md rounded-md">Powerful data analytics and visualizations to dive deep into message trends,
+                            engagement metrics, and user behavior.</div>
+                        </Tooltip>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">
+                      <div className='relative ml-2'>
+                        <div className="form-switch">
+                          <input type="checkbox" id="dataToggle" className="sr-only" checked={dataDash} onChange={handleDataDashToggle} />
+                          <label className="bg-slate-700" htmlFor="dataToggle">
+                            <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">$10/mo</td>
+                  </tr>
+                </tbody>
+              </table>
               {/* Dashboards */}
-              <div className="relative" data-aos="fade-up" data-aos-delay="200">
+              {/* <div className="relative" data-aos="fade-up" data-aos-delay="200">
                 <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <filter x="-35%" y="-25%" width="170%" height="170%" filterUnits="objectBoundingBox" id="fbp3-a">
@@ -177,10 +251,50 @@ export default function Faqs() {
                     </label>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Accordion>
 
             <Accordion title="Delivery">
+              {/* Delivery Table */}
+              <table className="table-auto w-full border-b border-slate-200">
+                <thead>
+                  <tr className="text-base sm:text-lg text-slate-800">
+                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Feature</th>
+                    <th className="text-bold text-center px-2 py-4">Toggle</th>
+                    <th className="text-bold text-center px-2 py-4">Price</th>
+                    {/* <th className="text-bold text-center px-2 py-4">Advanced</th> */}
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* Row */}
+                  <tr className="border-t first:border-t-2 border-slate-200">
+                    <td className="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                      <div className="flex items-center justify-between max-w-xs">
+                        <div>Email Frequency</div>
+                        {/* Tooltip */}
+                        <Tooltip>
+                          <div className="text-xs text-slate-100 max-w-md rounded-md">Select the number of Emails you intend to send per month.</div>
+                        </Tooltip>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">
+                      <div>
+                        <div>
+                          <input
+                            type="number"
+                            className="form-input border border-gray-300 rounded-md"
+                            value={emailFrequency}
+                            onChange={handleFrequencyChange}  // Updated to use the new handler
+                            min={10000}
+                            max={1000000}
+                          />
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">$0.005/mo</td>
+                  </tr>
+                </tbody>
+              </table>
               {/* Email Frequency */}
               <div className="relative" data-aos="fade-up">
                 <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">

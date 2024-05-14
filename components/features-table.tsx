@@ -9,7 +9,7 @@ export default function FeaturesTable() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-playfair-display text-slate-800">Compare plans by features</h2>
+            <h2 className="h2 font-playfair-display text-slate-800">Tailor your Perfect Plan!</h2>
           </div>
 
           {/* Tables */}

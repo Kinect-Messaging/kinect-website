@@ -1,16 +1,5 @@
 {
   "pages": {
-    "/(default)/pricing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(default)/pricing/page.js"
-    ],
-    "/(default)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(default)/layout.css",
-      "static/chunks/app/(default)/layout.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -27,21 +16,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(default)/page.js"
     ],
-    "/(default)/about/page": [
+    "/(default)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(default)/about/page.js"
+      "static/css/app/(default)/layout.css",
+      "static/chunks/app/(default)/layout.js"
     ],
-    "/(auth)/layout": [
+    "/(default)/pricing/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(auth)/layout.css",
-      "static/chunks/app/(auth)/layout.js"
-    ],
-    "/(auth)/request-demo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(auth)/request-demo/page.js"
+      "static/chunks/app/(default)/pricing/page.js"
     ]
   }
 }

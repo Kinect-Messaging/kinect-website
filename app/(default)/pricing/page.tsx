@@ -16,7 +16,7 @@ export default function Pricing() {
       <Hero />
       <CtaPricing />
       {/* <Features /> */}
-      {/* <FeaturesTable /> */}
+      <FeaturesTable />
       <Faqs />
       <Cta />
     </>

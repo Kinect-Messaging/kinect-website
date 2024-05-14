@@ -2373,9 +2373,6 @@ input[type=range]::-moz-focus-outer {
 .mt-8 {
   margin-top: 2rem;
 }
-.ml-1\.5 {
-  margin-left: 0.375rem;
-}
 .box-border {
   box-sizing: border-box;
 }
