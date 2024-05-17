@@ -26,8 +26,8 @@ export default function Header({ mode = 'dark' }: {
             <ul className="flex grow justify-start flex-wrap items-center">
               {/* <li>
                 <Link href="/features" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</Link>
-              </li>
-              <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Developers</Link> */}
+              </li> */}
+              {/* <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Developers</Link> */}
               {/* 1st level: hover */}
               {/* <Dropdown title="Developers"> */}
               {/* 2nd level: hover */}
@@ -38,6 +38,20 @@ export default function Header({ mode = 'dark' }: {
                   <Link href="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Support</Link>
                 </li>
               </Dropdown> */}
+              {/* <li>
+                <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+                <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+              </li>
+              <li>
+                <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About</Link>
+              </li> */}
+            </ul>
+
+            {/* Desktop sign in links */}
+            <ul className="flex grow justify-end flex-wrap items-center">
+              <li>
+                <Link href="/features" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</Link>
+              </li>
               <li>
                 <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
                 {/* <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link> */}
@@ -45,13 +59,9 @@ export default function Header({ mode = 'dark' }: {
               <li>
                 <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About</Link>
               </li>
-            </ul>
-
-            {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link href="/request-demo" className="font-medium text-blue-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out group">
-                  Request Demo <span className="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  Contact Us <span className="tracking-normal text-blue-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                 </Link>
               </li>
               {/* <li>
