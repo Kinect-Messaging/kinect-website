@@ -15,7 +15,7 @@ export default function FeaturesHome03() {
 
           {/* Section header */}
           <div className="max-w-5xl mx-auto text-center pb-12 md:pb-22">
-            <h2 className="h2 font-playfair-display text-slate-100">Kinect Messaging provides a holistic approach to enable organizations to sustain and realize value immediately.</h2>
+            <h2 className="h2 font-playfair-display text-slate-100">We Also Offer Professional Support</h2>
           </div>
 
           {/* Section content */}
@@ -35,10 +35,10 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Technical Strategy & Advising</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Consulting</a>
               </h3>
               <p className="text-lg text-slate-500">
-                Technical architecture, design, and development using Agile and Waterfall methodologies.
+                Advisory to shape / build your strategy and plan.
               </p>
             </article>
 
@@ -56,10 +56,10 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Marketing</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Implementation</a>
               </h3>
               <p className="text-lg text-slate-500">
-                Marketing strategies and methods centered around your Customer with a data-driven approach.
+                Complete integration of our product into your ecosystem.
               </p>
             </article>
 
@@ -77,10 +77,10 @@ export default function FeaturesHome03() {
                 </div>
               </a>
               <h3 className="h4 font-playfair-display mb-2">
-                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Execution</a>
+                <a className="text-slate-800 hover:underline hover:decoration-blue-100" href="#0">Support</a>
               </h3>
               <p className="text-lg text-slate-500">
-                We provide subject matter experts that work with you that can lead and / or support your initiatives and activities.
+                Self-serve and on-demand resources for your technical and production issues.
               </p>
             </article>
 

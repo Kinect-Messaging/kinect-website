@@ -9,15 +9,17 @@ import Features from '@/components/features-pricing'
 import FeaturesTable from '@/components/features-table'
 import Faqs from '@/components/faqs'
 import Cta from '@/components/cta-dark'
+import Features03 from '@/components/features-home-03'
 
 export default function Pricing() {
   return (
     <>
       <Hero />
-      <CtaPricing />
       {/* <Features /> */}
       {/* <FeaturesTable /> */}
       <Faqs />
+      <Features03 />
+      <CtaPricing />
       <Cta />
     </>
   )

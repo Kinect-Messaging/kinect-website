@@ -56,7 +56,6 @@ export default function Target() {
             </div>
 
           </div>
-          <p className="text-xl text-slate-500">We unlock your potential with powerful, <span style={{ fontWeight: 'bold' }}>cost-effective</span> solutions and transformative training to <span style={{ fontWeight: 'bold' }}>enable</span> capabilities, and drive <span style={{ fontWeight: 'bold' }}>efficiency</span>.</p>
         </div>
       </div>
     </section>

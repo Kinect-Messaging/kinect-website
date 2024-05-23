@@ -13,6 +13,7 @@ import TestimonialsHome from '@/components/testimonials-home'
 import PricingSection from '@/components/pricing'
 import Cta from '@/components/cta'
 import { NextUIProvider } from '@nextui-org/react';
+import WhyKinect from '@/components/whyKinect'
 
 export default function Home() {
   return (
@@ -21,9 +22,10 @@ export default function Home() {
         <FeaturesBlocks />
         {/* <Features /> */}
         {/* <Features02 /> */}
-        <Features03 />
-        <TestimonialsHome />
+        {/* <Features03 /> */}
         <Target />
+        <WhyKinect />
+        <TestimonialsHome />
         {/* <PricingSection /> */}
         <Cta />
     </NextUIProvider>
