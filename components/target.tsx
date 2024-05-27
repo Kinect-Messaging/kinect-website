@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import TargetImage from '@/public/images/target.png'
+import TargetImage from '@/public/images/loss.jpg'
 
 export default function Target() {
   return (

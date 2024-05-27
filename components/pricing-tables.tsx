@@ -14,7 +14,7 @@ export default function PricingSliderTables() {
   return (
     <div>
       {/* Pricing toggle */}
-      <div className="flex justify-center items-center space-x-4 sm:space-x-7 mb-16">
+      {/* <div className="flex justify-center items-center space-x-4 sm:space-x-7 mb-16">
         <div className="text-sm text-slate-500 font-medium text-right min-w-[8rem]">Pay Monthly</div>
         <div className="form-switch shrink-0">
           <input type="checkbox" id="toggle" className="sr-only" checked={annual} onChange={() => setAnnual(!annual)} />
@@ -24,7 +24,7 @@ export default function PricingSliderTables() {
           </label>
         </div>
         <div className="text-sm text-slate-500 font-medium min-w-[8rem]">Pay Yearly <span className="text-emerald-500">(-20%)</span></div>
-      </div>
+      </div> */}
 
       {/* Variable Pricing Slider */}
       <div>

@@ -67,9 +67,9 @@ export default function Faqs() {
               <table className="table-auto w-full border-b border-slate-200">
                 <thead>
                   <tr className="text-base sm:text-lg text-slate-800">
-                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Feature</th>
-                    <th className="text-bold text-center px-2 py-4">Toggle</th>
-                    <th className="text-bold text-center px-2 py-4">Price</th>
+                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]"></th>
+                    <th className="text-bold text-center px-2 py-4"></th>
+                    <th className="text-bold text-center px-2 py-4"></th>
                     {/* <th className="text-bold text-center px-2 py-4">Advanced</th> */}
                   </tr>
                 </thead>
@@ -158,9 +158,9 @@ export default function Faqs() {
               <table className="table-auto w-full border-b border-slate-200">
                 <thead>
                   <tr className="text-base sm:text-lg text-slate-800">
-                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Feature</th>
-                    <th className="text-bold text-center px-2 py-4">Toggle</th>
-                    <th className="text-bold text-center px-2 py-4">Price</th>
+                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]"></th>
+                    <th className="text-bold text-center px-2 py-4"></th>
+                    <th className="text-bold text-center px-2 py-4"></th>
                     {/* <th className="text-bold text-center px-2 py-4">Advanced</th> */}
                   </tr>
                 </thead>
@@ -259,9 +259,9 @@ export default function Faqs() {
               <table className="table-auto w-full border-b border-slate-200">
                 <thead>
                   <tr className="text-base sm:text-lg text-slate-800">
-                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]">Feature</th>
-                    <th className="text-bold text-center px-2 py-4">Toggle</th>
-                    <th className="text-bold text-center px-2 py-4">Price</th>
+                    <th className="text-xl md:text-2xl whitespace-nowrap font-bold font-playfair-display text-left pr-2 py-4 min-w-[10rem] md:min-w-[24rem]"></th>
+                    <th className="text-bold text-center px-2 py-4"></th>
+                    <th className="text-bold text-center px-2 py-4"></th>
                     {/* <th className="text-bold text-center px-2 py-4">Advanced</th> */}
                   </tr>
                 </thead>
@@ -295,67 +295,6 @@ export default function Faqs() {
                   </tr>
                 </tbody>
               </table>
-              {/* Email Frequency */}
-              <div className="relative" data-aos="fade-up">
-                <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <filter x="-50%" y="-35.7%" width="200%" height="200%" filterUnits="objectBoundingBox" id="fbp1-a">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <filter x="-50%" y="-35.7%" width="200%" height="200%" filterUnits="objectBoundingBox" id="fbp1-c">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <filter x="-25%" y="-17.9%" width="150%" height="150%" filterUnits="objectBoundingBox" id="fbp1-e">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <filter x="-25%" y="-17.9%" width="150%" height="150%" filterUnits="objectBoundingBox" id="fbp1-h">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <path d="M43 28h-2v-1c0-2.206-1.794-4-4-4h-1v-2h1c3.309 0 6 2.691 6 6v1Z" id="fbp1-b" />
-                    <path d="M28 43h-1c-3.309 0-6-2.691-6-6v-1h2v1c0 2.206 1.794 4 4 4h1v2Z" id="fbp1-d" />
-                    <path d="M28 30a2 2 0 0 1 2-2h4v-5a1 1 0 0 0-1-1h-5.586l-1.707-1.707A1 1 0 0 0 25 20h-4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7v-4Z" id="fbp1-f" />
-                    <path d="M43 32h-5.586l-1.707-1.707A.996.996 0 0 0 35 30h-4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V33a1 1 0 0 0-1-1Z" id="fbp1-i" />
-                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fbp1-g">
-                      <stop stopColor="#FFF" offset="0%" />
-                      <stop stopColor="#DBEAFE" offset="100%" />
-                    </linearGradient>
-                  </defs>
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <use fill="#000" filter="url(#fbp1-a)" xlinkHref="#fbp1-b" />
-                  <use fillOpacity=".64" fill="#BFDBFE" xlinkHref="#fbp1-b" />
-                  <use fill="#000" filter="url(#fbp1-c)" xlinkHref="#fbp1-d" />
-                  <use fillOpacity=".64" fill="#BFDBFE" xlinkHref="#fbp1-d" />
-                  <use fill="#000" filter="url(#fbp1-e)" xlinkHref="#fbp1-f" />
-                  <use fill="url(#fbp1-g)" xlinkHref="#fbp1-f" />
-                  <use fill="#000" filter="url(#fbp1-h)" xlinkHref="#fbp1-i" />
-                  <use fill="url(#fbp1-g)" xlinkHref="#fbp1-i" />
-                </svg>
-                <h3 className="h4 font-playfair-display mb-2">Email Frequency</h3>
-                <p className="text-lg text-slate-500 mb-3">Select the number of Emails you intend to send per month</p>
-                <div className="font-bold text-slate-800">$0.005/mo</div>
-                <div>
-                  <div>
-                    <input
-                      type="number"
-                      className="form-input border border-gray-300 rounded-md"
-                      value={emailFrequency}
-                      onChange={handleFrequencyChange}  // Updated to use the new handler
-                      min={10000}
-                      max={1000000}
-                    />
-                  </div>
-                </div>
-              </div>
             </Accordion>
 
             <span className="block border-t border-gray-200" aria-hidden="true"></span>

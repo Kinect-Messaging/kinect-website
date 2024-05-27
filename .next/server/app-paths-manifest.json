@@ -1,5 +1,6 @@
 {
   "/not-found": "app/not-found.js",
   "/(default)/page": "app/(default)/page.js",
-  "/(default)/pricing/page": "app/(default)/pricing/page.js"
+  "/(default)/pricing/page": "app/(default)/pricing/page.js",
+  "/(default)/features/page": "app/(default)/features/page.js"
 }

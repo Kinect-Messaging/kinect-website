@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import TargetImage from '@/public/images/target.png'
+import TargetImage from '@/public/images/hiking.jpg'
 
 export default function WhyKinect() {
   return (
@@ -53,7 +53,6 @@ export default function WhyKinect() {
             </div>
 
           </div>
-          <p className="text-xl text-slate-500">We unlock your potential with powerful, <span style={{ fontWeight: 'bold' }}>cost-effective</span> solutions and transformative training to <span style={{ fontWeight: 'bold' }}>enable</span> capabilities, and drive <span style={{ fontWeight: 'bold' }}>efficiency</span>.</p>
         </div>
       </div>
     </section>
