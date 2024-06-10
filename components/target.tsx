@@ -26,7 +26,7 @@ export default function Target() {
                     </svg>
                     <div className="h2 font-playfair-display text-slate-800">20%</div>
                   </div>
-                  <div className="text-slate-500 text-lg"><span style={{ fontWeight: 'bold' }}>Utilization</span> of features</div>
+                  <div className="text-slate-500 text-xl"><span style={{ fontWeight: 'bold' }}>Utilization</span> of features</div>
                 </li>
                 <li>
                   <div className="flex items-center mb-4">
@@ -35,7 +35,7 @@ export default function Target() {
                     </svg>
                     <div className="h2 font-playfair-display text-slate-800">35%</div>
                   </div>
-                  <div className="text-slate-500 text-lg"><span style={{ fontWeight: 'bold' }}>ROI</span> of organizations and developers</div>
+                  <div className="text-slate-500 text-xl"><span style={{ fontWeight: 'bold' }}>ROI</span> of organizations and developers</div>
                 </li>
                 <li>
                   <div className="flex items-center mb-4">
@@ -44,7 +44,7 @@ export default function Target() {
                     </svg>
                     <div className="h2 font-playfair-display text-slate-800">29%</div>
                   </div>
-                  <div className="text-slate-500 text-lg"><span style={{ fontWeight: 'bold' }}>Time wasted</span> to search infromation</div>
+                  <div className="text-slate-500 text-xl"><span style={{ fontWeight: 'bold' }}>Time wasted</span> to search infromation</div>
                 </li>
               </ul>
             </div>

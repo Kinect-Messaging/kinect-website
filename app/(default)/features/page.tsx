@@ -4,13 +4,13 @@ export const metadata = {
   }
   
   import Hero from '@/components/hero-features'
-  import FeaturesBlocks from '@/components/features-page-blocks'
+  import FeaturesPageBlocks from '@/components/features-page-blocks'
   
   export default function About() {
     return (
       <>
         <Hero />
-        <FeaturesBlocks />
+        <FeaturesPageBlocks />
       </>
     )
   }
