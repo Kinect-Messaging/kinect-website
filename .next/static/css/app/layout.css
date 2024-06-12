@@ -3075,9 +3075,6 @@ input[type=range]::-moz-focus-outer {
 .gap-8 {
   gap: 2rem;
 }
-.gap-20 {
-  gap: 5rem;
-}
 .gap-x-0 {
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -3622,10 +3619,6 @@ input[type=range]::-moz-focus-outer {
 .py-px {
   padding-top: 1px;
   padding-bottom: 1px;
-}
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 .\!pb-0 {
   padding-bottom: 0px !important;

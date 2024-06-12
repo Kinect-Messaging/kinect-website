@@ -27,7 +27,7 @@ export default function Home() {
         <WhyKinect />
         <TestimonialsHome />
         {/* <PricingSection /> */}
-        <Cta />
+        {/* <Cta /> */}
     </NextUIProvider>
   )
 }
