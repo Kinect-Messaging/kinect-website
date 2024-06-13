@@ -22,7 +22,7 @@ export default function Pricing() {
       <Features03 />
       <CtaPricing />
       <TestimonialsPricing/>
-      <Cta />
+      {/* <Cta /> */}
     </>
   )
 }

@@ -11,7 +11,7 @@ import Features03 from '@/components/features-home-03'
 import Target from '@/components/target'
 import TestimonialsHome from '@/components/testimonials-home'
 import PricingSection from '@/components/pricing'
-import Cta from '@/components/cta'
+import OurModel from '@/components/our-model'
 import { NextUIProvider } from '@nextui-org/react';
 import WhyKinect from '@/components/whyKinect'
 
@@ -27,7 +27,7 @@ export default function Home() {
         <WhyKinect />
         <TestimonialsHome />
         {/* <PricingSection /> */}
-        {/* <Cta /> */}
+        <OurModel />
     </NextUIProvider>
   )
 }
