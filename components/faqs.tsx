@@ -6,6 +6,8 @@ import Tooltip from '@/components/utils/tooltip'
 export default function Faqs() {
 
   const [mapping, setMapping] = useState<boolean>(false)
+  const [emailMap, setEmailMap] = useState<boolean>(false)
+  const [audSeg, setAudSeg] = useState<boolean>(false)
   const [dataDash, setDataDash] = useState<boolean>(false)
 
   const [emailFrequency, setEmailFrequency] = useState<number>(10000);
@@ -15,7 +17,23 @@ export default function Faqs() {
   const handleMappingToggle = () => {
     setMapping(prevState => {
       const newState = !prevState;
-      setEstimatedCost(calculateCost(newState, dataDash, emailFrequency));
+      setEstimatedCost(calculateCost(newState, emailMap, audSeg, dataDash, emailFrequency));
+      return newState;
+    });
+  };
+
+  const handleEmailMappingToggle = () => {
+    setEmailMap(prevState => {
+      const newState = !prevState;
+      setEstimatedCost(calculateCost(mapping, newState, audSeg, dataDash, emailFrequency));
+      return newState;
+    });
+  };
+
+  const handleAudSegToggle = () => {
+    setAudSeg(prevState => {
+      const newState = !prevState;
+      setEstimatedCost(calculateCost(mapping, emailMap, newState, dataDash, emailFrequency));
       return newState;
     });
   };
@@ -23,7 +41,7 @@ export default function Faqs() {
   const handleDataDashToggle = () => {
     setDataDash(prevState => {
       const newState = !prevState;
-      setEstimatedCost(calculateCost(mapping, newState, emailFrequency));
+      setEstimatedCost(calculateCost(mapping, emailMap, audSeg, newState, emailFrequency));
       return newState;
     });
   };
@@ -36,17 +54,19 @@ export default function Faqs() {
       newFrequency = 1000000;
     }
     setEmailFrequency(newFrequency);
-    setEstimatedCost(calculateCost(mapping, dataDash, newFrequency));
+    setEstimatedCost(calculateCost(mapping, emailMap, audSeg, dataDash, newFrequency));
   };
 
   // Updated calculateCost to accept the new email frequency as a parameter
-  const calculateCost = (mapping: boolean, dataDash: boolean, emailFreq: number) => {
+  const calculateCost = (mapping: boolean, emailMap: boolean, audSeg: boolean, dataDash: boolean, emailFreq: number) => {
     let cost = 0; // base cost
     if (emailFreq > 10000) {
       cost += 0.005 * (emailFreq - 10000);
     }
     if (mapping) cost += 10;
+    if (emailMap) cost += 10;
     if (dataDash) cost += 10;
+    if (audSeg) cost += 10;
     return cost;
   };
   return (
@@ -74,7 +94,7 @@ export default function Faqs() {
                   </tr>
                 </thead>
                 <tbody>
-                  {/* Row */}
+                  {/* Row 1*/}
                   <tr className="border-t first:border-t-2 border-slate-200">
                     <td className="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
                       <div className="flex items-center justify-between max-w-xs">
@@ -97,60 +117,54 @@ export default function Faqs() {
                     </td>
                     <td className="text-sm px-2 py-4 text-center italic text-slate-800">$10/mo</td>
                   </tr>
+                  {/* Row 2*/}
+                  <tr className="border-t first:border-t-2 border-slate-200">
+                    <td className="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                      <div className="flex items-center justify-between max-w-xs">
+                        <div>Email Customer Messaging Builder</div>
+                        {/* Tooltip */}
+                        <Tooltip>
+                          <div className="text-xs text-slate-100 max-w-md rounded-md">Create holistic end to end Customer Journeys at every touchpoint, identify pain points, and optimize interactions for a smoother, more personalized experience.</div>
+                        </Tooltip>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">
+                      <div className='relative ml-2'>
+                        <div className="form-switch">
+                          <input type="checkbox" id="emailMapToggle" className="sr-only" checked={emailMap} onChange={handleEmailMappingToggle} />
+                          <label className="bg-slate-700" htmlFor="emailMapToggle">
+                            <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">$10/mo</td>
+                  </tr>
+                  {/* Row 3*/}
+                  <tr className="border-t first:border-t-2 border-slate-200">
+                    <td className="text-sm sm:text-base font-medium text-slate-800 pr-2 py-4">
+                      <div className="flex items-center justify-between max-w-xs">
+                        <div>Audience Segmentation</div>
+                        {/* Tooltip */}
+                        <Tooltip>
+                          <div className="text-xs text-slate-100 max-w-md rounded-md">Create holistic end to end Customer Journeys at every touchpoint, identify pain points, and optimize interactions for a smoother, more personalized experience.</div>
+                        </Tooltip>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">
+                      <div className='relative ml-2'>
+                        <div className="form-switch">
+                          <input type="checkbox" id="audSegToggle" className="sr-only" checked={audSeg} onChange={handleAudSegToggle} />
+                          <label className="bg-slate-700" htmlFor="audSegToggle">
+                            <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-sm px-2 py-4 text-center italic text-slate-800">$10/mo</td>
+                  </tr>
                 </tbody>
               </table>
-              {/* Journey */}
-              {/* <div className="relative" data-aos="fade-up" data-aos-delay="100">
-                <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <filter x="-70.7%" y="-50%" width="241.3%" height="240%" filterUnits="objectBoundingBox" id="fbp2-a">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <filter x="-70.7%" y="-50%" width="241.3%" height="240%" filterUnits="objectBoundingBox" id="fbp2-c">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <filter x="-18.4%" y="-11.9%" width="136.8%" height="133.3%" filterUnits="objectBoundingBox" id="fbp2-e">
-                      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
-                      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                      <feColorMatrix values="0 0 0 0 0.062745098 0 0 0 0 0.11372549 0 0 0 0 0.176470588 0 0 0 0.12 0" in="shadowBlurOuter1" />
-                    </filter>
-                    <path d="M25.162 26H23.18v-4c0-.553.444-1 .99-1h3.962v2h-2.971v3Z" id="fbp2-b" />
-                    <path d="M41.01 26h-1.981v-3h-2.972v-2h3.962c.547 0 .99.447.99 1v4Z" id="fbp2-d" />
-                    <path d="M42 45V34c0-1.105-.886-2-1.981-2h-5.943v-5.999A1.991 1.991 0 0 0 32.096 24a1.99 1.99 0 0 0-1.982 2v11l-4.188-3.382a1.789 1.789 0 0 0-1.694-.305c-1.064.358-1.548 1.601-1.012 2.595L28.133 45H42Z" id="fbp2-f" />
-                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="fbp2-g">
-                      <stop stopColor="#FFF" offset="0%" />
-                      <stop stopColor="#DBEAFE" offset="100%" />
-                    </linearGradient>
-                  </defs>
-                  <rect className="fill-current text-blue-600" width="64" height="64" rx="32" />
-                  <use fill="#000" filter="url(#fbp2-a)" xlinkHref="#fbp2-b" />
-                  <use fillOpacity=".64" fill="#BFDBFE" xlinkHref="#fbp2-b" />
-                  <use fill="#000" filter="url(#fbp2-c)" xlinkHref="#fbp2-d" />
-                  <use fillOpacity=".64" fill="#BFDBFE" xlinkHref="#fbp2-d" />
-                  <use fill="#000" filter="url(#fbp2-e)" xlinkHref="#fbp2-f" />
-                  <use fill="url(#fbp2-g)" xlinkHref="#fbp2-f" />
-                </svg>
-                <h3 className="h4 font-playfair-display mb-2">Customer Journey Builder</h3>
-                <p className="text-lg text-slate-500 mb-3">
-                  Create holistic end to end Customer Journeys at every touchpoint, identify pain points,
-                  and optimize interactions for a smoother, more personalized experience.
-                </p>
-                <div className="font-bold text-slate-800">$10/mo</div>
-                <div className='relative ml-2'>
-                  <div className="form-switch">
-                    <input type="checkbox" id="mapToggle" className="sr-only" checked={mapping} onChange={handleMappingToggle} />
-                    <label className="bg-slate-700" htmlFor="mapToggle">
-                      <span className="bg-slate-300 border-8 border-slate-500" aria-hidden="true"></span>
-                    </label>
-                  </div>
-                </div>
-              </div> */}
             </Accordion>
 
             <Accordion title="Data & Dashboards">
