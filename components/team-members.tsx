@@ -2,7 +2,6 @@ import Image from 'next/image'
 import TeamMemberImage01 from '@/public/images/al_image.jpg'
 import TeamMemberImage02 from '@/public/images/raj_image.jpeg'
 import TeamMemberImage03 from '@/public/images/ty_image.jpg'
-import TeamMemberImage04 from '@/public/images/pc_image.jpg'
 import TeamMemberImage05 from '@/public/images/team-member-05.jpg'
 import TeamMemberImage06 from '@/public/images/team-member-06.jpg'
 import TeamMemberImage07 from '@/public/images/team-member-07.jpg'
@@ -45,9 +44,8 @@ export default function TeamMembers() {
             {/* 3rd member */}
             <div className="text-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-team]" data-aos-delay={300}>
               <div className="inline-flex mb-4">
-                <Image className="rounded-full" src={TeamMemberImage04} width={120} height={120} alt="Member 04" />
+{/*                 <Image className="rounded-full" src={TeamMemberImage04} width={120} height={120} alt="Member 04" /> */}
               </div>
-              <h4 className="h4 font-playfair-display text-slate-800 mb-2">Pragnath Chintalapati</h4>
               <div className="font-medium text-blue-600">Lead Software Engineer</div>
             </div>
 
