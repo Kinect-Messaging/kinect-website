@@ -46,7 +46,7 @@ export default function TeamMembers() {
               <div className="inline-flex mb-4">
 {/*                 <Image className="rounded-full" src={TeamMemberImage04} width={120} height={120} alt="Member 04" /> */}
               </div>
-              <div className="font-medium text-blue-600">Lead Software Engineer</div>
+{/*               <div className="font-medium text-blue-600">Lead Software Engineer</div> */}
             </div>
 
             {/* 5th member */}
